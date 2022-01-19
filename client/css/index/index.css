@@ -1,0 +1,145 @@
+main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  border: none;
+}
+
+main #hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #000;
+  font-weight: bold;
+  padding: 1rem 0;
+  height: 29vh;
+}
+
+main #hero #welcomeLogoArea {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  text-align: center;
+  font-size: 5rem;
+  -webkit-box-shadow: 0 0 1rem #fff inset, 0 0 1rem #fff;
+          box-shadow: 0 0 1rem #fff inset, 0 0 1rem #fff;
+  border-radius: 100%;
+  padding: 1rem 2.4rem;
+}
+
+main #hero #welcomeLogoArea #YT {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+main #hero #welcomeLogoArea #welcomeLogo {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+main #hero #welcomeLogoArea:hover {
+  -webkit-box-shadow: 0 0 1rem blue inset;
+          box-shadow: 0 0 1rem blue inset;
+  padding: 1rem 2.2rem;
+}
+
+main #hero #welcomeLogoArea:hover #YT {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: block;
+  font-size: 0.8rem;
+}
+
+main #hero #welcomeLogoArea:hover #welcomeLogo {
+  font-size: 4rem;
+}
+
+main #hero #welcome {
+  margin: auto;
+  font-size: 2rem;
+  text-align: center;
+}
+
+main #About {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem auto;
+  width: 90%;
+  background: #000;
+  -webkit-box-shadow: 0 0 1rem #fff;
+          box-shadow: 0 0 1rem #fff;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+}
+
+main #About h1 {
+  margin: 0.5rem 0;
+  text-align: center;
+  -webkit-box-shadow: 0 0 1rem #fff;
+          box-shadow: 0 0 1rem #fff;
+  padding: 0.5rem 0;
+}
+
+main #About p {
+  margin: 0.3rem auto;
+  font-weight: bold;
+}
+
+@media (min-width: 500px) {
+  main #hero #welcome {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 710px) {
+  main #hero {
+    height: 70vh;
+  }
+  main #hero #welcome {
+    font-size: 5rem;
+  }
+  main #hero #welcomeLogoArea {
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    padding: 1rem 2.4rem;
+  }
+  main #hero #welcomeLogoArea #welcomeLogo {
+    font-size: 13rem;
+  }
+  main #hero #welcomeLogoArea #YT {
+    font-size: 3rem;
+  }
+  main #hero #welcomeLogoArea:hover {
+    -webkit-box-shadow: 0 0 2rem blue inset;
+            box-shadow: 0 0 2rem blue inset;
+    padding: 1rem 4.4rem;
+  }
+  main #hero #welcomeLogoArea:hover #welcomeLogo {
+    font-size: 11rem;
+  }
+  main #hero #welcomeLogoArea:hover #YT {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */

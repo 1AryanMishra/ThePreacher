@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  max-width: 100%;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  border-bottom: 1px solid #fff;
+  -webkit-box-shadow: 0 0 1rem #fff inset;
+          box-shadow: 0 0 1rem #fff inset;
+}
+
+body header #LogoSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 25, 244, 0.5)), to(rgba(24, 44, 34, 0.5)));
+  background-image: linear-gradient(rgba(55, 25, 244, 0.5), rgba(24, 44, 34, 0.5));
+  padding: 1rem;
+}
+
+body header #LogoSection h1 {
+  color: #fff;
+}
+
+body header #LogoSection button {
+  -webkit-box-shadow: 0 0 0.5rem #000;
+          box-shadow: 0 0 0.5rem #000;
+  background: red;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: auto;
+  margin-right: 0rem;
+  padding: 0.5rem;
+}
+
+body header #LogoSection button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body header #TopNav {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 44, 34, 0.5)), to(rgba(255, 255, 255, 0.5)));
+  background-image: linear-gradient(rgba(24, 44, 34, 0.5), rgba(255, 255, 255, 0.5));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header #TopNav a {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  font-size: 1.3rem;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+body header #TopNav a:hover {
+  background: #fff;
+  -webkit-box-shadow: 0 0 1rem #fff;
+          box-shadow: 0 0 1rem #fff;
+}
+
+body header #TopNav hr {
+  margin: 0;
+  color: #fff;
+}
+
+body main {
+  margin: 1rem 0;
+  -webkit-box-shadow: 0 0 1rem #000;
+          box-shadow: 0 0 1rem #000;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+body main article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main article img {
+  max-width: 100%;
+}
+
+body main article #description {
+  margin: 1rem;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main article #description p {
+  font-size: 1.5rem;
+}
+
+body main #ArticleNavBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #fff;
+}
+
+body main #ArticleNavBtns button {
+  outline: none;
+  border: none;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: blue;
+  -webkit-box-shadow: 0 0 0.3rem blue;
+          box-shadow: 0 0 0.3rem blue;
+}
+
+body main #ArticleNavBtns button:hover {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #909090;
+}
+
+body footer a {
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+body footer a:hover {
+  -webkit-box-shadow: 0 0 1rem #fff;
+          box-shadow: 0 0 1rem #fff;
+}
+
+@media (min-width: 850px) {
+  body main article {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem;
+  }
+  body main article p {
+    margin: auto 1rem;
+    text-align: center;
+  }
+  body main article img {
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 0 0 1rem #000;
+            box-shadow: 0 0 1rem #000;
+    max-width: 50%;
+  }
+}
+/*# sourceMappingURL=Demo.css.map */

@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f0f2f5;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 100%;
+
+    header{
+        display: flex;
+        flex-flow: column nowrap;
+        border-bottom: 1px solid #fff;
+        box-shadow: 0 0 1rem #fff inset;
+
+        #LogoSection{
+            display: flex;
+            justify-content: space-between;
+            background-image: linear-gradient(rgba(55,25,244,0.5), rgba(24, 44, 34, 0.5));
+            padding: 1rem;
+
+            h1{
+                color: #fff;
+            }
+            
+            button{
+                box-shadow: 0 0 0.5rem #000;
+                background: red;
+                border: none;
+                border-radius: 6px;
+                outline: none;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: bold;
+                margin: auto;
+                margin-right: 0rem;
+                padding: 0.5rem;
+            }
+
+            button:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        #TopNav{
+            background-image: linear-gradient(rgba(24, 44, 34, 0.5), rgba(255, 255, 255, 0.5));
+            display: flex;
+            justify-content: space-around;
+
+            a{
+                transition: 0.5s ease;
+                font-size: 1.3rem;
+                padding: 1rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            a:hover{
+                 background: #fff;
+                box-shadow: 0 0 1rem #fff;
+            }
+
+            hr{
+                margin: 0;
+                color: #fff;
+            }
+        }
+    }
+
+    main{
+        margin: 1rem 0;
+        box-shadow: 0 0 1rem #000;
+        max-width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+
+        article{
+            display: flex;
+            flex-direction: column;
+
+            img{
+                max-width: 100%;
+            }
+    
+            #description{
+                margin: 1rem;
+                font-size: 1.4rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        #ArticleNavBtns{
+            display: flex;
+            justify-content: space-around;
+            background: #fff;
+
+            button{
+                outline: none;
+                border: none;
+                margin: 1rem 0;
+                padding: 0.5rem;
+                font-size: 1.5rem;
+                color: blue;
+                box-shadow: 0 0 0.3rem blue;
+            }
+
+            button:hover{
+                transition: 0.2s ease;
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        background: #909090;
+
+        a{
+            color: #fff;
+            padding: 1rem;
+            font-size: 1.1rem;
+        }
+
+        a:hover{
+            box-shadow: 0 0 1rem #fff;
+        }
+    }
+}
+
+@media (min-width : 850px){
+
+    body{
+
+        main{
+
+            article{
+                flex-direction: row;
+                margin: 1rem;
+
+                p{
+                    margin: auto 1rem;
+                    text-align: center;
+                }
+                
+                img{
+                    outline: none;
+                    border: none;
+                    box-shadow: 0 0 1rem #000;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+}

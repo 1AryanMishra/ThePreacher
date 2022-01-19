@@ -1,0 +1,151 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+
+    #ThisPageLink{
+        background: #f0f2f5;
+        box-shadow: 0 0 1rem #fff;
+        color: #909090;
+        font-weight: bold;
+    }
+    
+    header{
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+
+        #LogoArea{
+            border-radius: 0;
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 0.5rem;
+            background: #000;
+            color: #fff;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            
+            #Logo{
+                margin: auto 1rem;
+                box-shadow: 0 0 1rem #fff inset, 0 0 1rem #fff;
+                padding: 0.2rem 0.8rem;
+                border-radius: 100%;
+            }
+            #Logo:hover{
+                box-shadow: 0 0 1rem #fff inset;
+            }
+        }
+
+        nav{
+            border-radius: 0;
+            display: flex;
+            background: #909090;
+            
+            a{
+                color: #fff;
+                width: 100%;
+                text-align: center;
+                padding: 0.8rem 0.2rem;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            a:hover{
+                transition: 0.3s ease;
+                background: #fff;
+                color: #909090;
+                box-shadow: 0 0 1rem #fff;
+            }
+
+        }
+    }
+
+    main{
+        border-radius: 0;
+        display: flex;
+    }
+
+    footer{
+        box-shadow: 0 0 1rem #fff;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+
+        a{
+            padding: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #909090;
+        }
+
+        a:hover{
+            transition: 0.2s ease;
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+            box-shadow: 0 0 1rem #fff, 0 0 1rem #fff inset;
+        }
+        #Contacts{
+            display: flex;
+            justify-content: space-between;
+    
+            a{
+                text-align: center;
+
+                img{
+                    max-width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 950px){
+
+    body{
+
+        header{
+            box-shadow: 0 0 1rem #fff;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            nav{
+                background: #000;
+
+                a{
+                    margin: auto 1rem;
+                    padding: 1rem;
+                    color: #909090;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        footer{
+    
+            #Contacts{
+
+                a{
+                    
+                    img{
+                        max-width: 13%;
+                    }
+                }    
+            }
+        }
+    }
+
+}

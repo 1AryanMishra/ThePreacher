@@ -1,0 +1,182 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #ThisPageLink {
+  background: #f0f2f5;
+  -webkit-box-shadow: 0 0 1rem #fff;
+          box-shadow: 0 0 1rem #fff;
+  color: #909090;
+  font-weight: bold;
+}
+
+body header {
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header #LogoArea {
+  border-radius: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  background: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header #LogoArea #Logo {
+  margin: auto 1rem;
+  -webkit-box-shadow: 0 0 1rem #fff inset, 0 0 1rem #fff;
+          box-shadow: 0 0 1rem #fff inset, 0 0 1rem #fff;
+  padding: 0.2rem 0.8rem;
+  border-radius: 100%;
+}
+
+body header #LogoArea #Logo:hover {
+  -webkit-box-shadow: 0 0 1rem #fff inset;
+          box-shadow: 0 0 1rem #fff inset;
+}
+
+body header nav {
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #909090;
+}
+
+body header nav a {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 0.8rem 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+body header nav a:hover {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: #fff;
+  color: #909090;
+  -webkit-box-shadow: 0 0 1rem #fff;
+          box-shadow: 0 0 1rem #fff;
+}
+
+body main {
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer {
+  -webkit-box-shadow: 0 0 1rem #fff;
+          box-shadow: 0 0 1rem #fff;
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #000;
+}
+
+body footer a {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #909090;
+}
+
+body footer a:hover {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  -webkit-box-shadow: 0 0 1rem #fff, 0 0 1rem #fff inset;
+          box-shadow: 0 0 1rem #fff, 0 0 1rem #fff inset;
+}
+
+body footer #Contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer #Contacts a {
+  text-align: center;
+}
+
+body footer #Contacts a img {
+  max-width: 60%;
+}
+
+@media (min-width: 950px) {
+  body header {
+    -webkit-box-shadow: 0 0 1rem #fff;
+            box-shadow: 0 0 1rem #fff;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body header nav {
+    background: #000;
+  }
+  body header nav a {
+    margin: auto 1rem;
+    padding: 1rem;
+    color: #909090;
+    font-size: 1.4rem;
+  }
+  body footer #Contacts a img {
+    max-width: 13%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
