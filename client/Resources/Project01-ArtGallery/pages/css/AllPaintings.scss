@@ -1,0 +1,108 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h1{
+            text-align: center;
+        }
+
+        nav{
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+
+            a{
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                color: #909090;
+                font-size: 1.4rem;
+                font-weight: bold;
+                transition: 0.4s ease;
+            }
+            a:hover{
+                box-shadow: 0 0.1rem 0 #fff inset;
+                color: #fff;
+            }
+        }
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        background: #555;
+
+        article{
+            background: #000;
+            display: flex;
+            margin-top: 0.3rem;
+            justify-content: space-around;
+            padding: 3rem 0;
+            align-items: center;
+
+            div{
+                font-size: 1.6rem;
+                margin: auto 1rem;
+            }
+            img{
+                transition: 1.5s ease;
+                width: 30%;
+            }
+            img:hover{
+                transition: 0.3s ease;
+                box-shadow: 0 0 1rem yellow;
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:750px){
+    body {
+        header{
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: stretch;
+        }
+
+        main{
+            article{
+                flex-direction: column;
+                
+                div{
+                    margin: auto 2rem;
+                }
+                
+                img{
+                    width: 80%;
+                }
+            }
+            
+            section{
+                flex-direction: column;
+
+                img{
+                    width: 80%;
+                }
+
+                div{
+                    margin: 0;
+                    max-width: 100%;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

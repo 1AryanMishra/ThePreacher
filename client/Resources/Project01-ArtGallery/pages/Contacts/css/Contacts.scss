@@ -1,0 +1,118 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h1{
+            text-align: center;
+        }
+
+        nav{
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+
+            a{
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                color: #909090;
+                font-size: 1.4rem;
+                font-weight: bold;
+                transition: 0.4s ease;
+            }
+            a:hover{
+                box-shadow: 0 0.1rem 0 #fff inset;
+                color: #fff;
+            }
+        }
+    }
+
+    main{
+        background: #555;
+        display: flex;
+        flex-direction: column;
+
+        section{
+            margin-top: 0.3rem;
+            background: #000;
+            padding: 1rem 0;
+        }
+
+        #SocialLinks{
+            display: flex;
+            justify-content: space-evenly;
+
+            a{
+                border-radius: 6px;
+                padding: 1rem;
+                max-width: 5%;
+
+                img{
+                    max-width: 100%;
+                }
+            }
+
+            a:hover{
+                box-shadow: 0 0 0.5rem #fff;
+            }
+        }
+
+        #about{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            img{
+                margin: 1rem;
+                border-radius: 100%;
+                box-shadow: 0 0 1rem #fff;
+                width: 5%;
+                flex: 1;
+            }
+            p{
+                padding: 0 1rem;
+                text-align: center;
+                flex: 2;
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+
+@media(max-width:750px){
+    body {
+        header{
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: stretch;
+        }
+
+        main{
+            #about{
+                flex-direction: column;
+
+                img{
+                    width: 80%;
+                }
+            }
+
+            #SocialLinks{
+                a{
+                    max-width: 10%;
+                }
+            }
+        }
+    }
+}
